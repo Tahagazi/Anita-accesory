@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anita | Jewelry & Accessories</title>
+
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="اکسسوری‌های خاص و ظریف | Anita">
+<meta name="description" content="مجموعه‌ای از اکسسوری‌های ظریف و خاص شامل زیورآلات مرواریدی، مینیمال، سنگ طبیعی و کالکشن‌های ویژه؛ انتخابی زیبا برای خودتان یا هدیه به عزیزانتان.">
+<meta name="keywords" content="اکسسوری زنانه, زیورآلات, گردنبند, دستبند, گوشواره, مروارید, اکسسوری مینیمال, سنگ طبیعی, هدیه">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Anita">
+<meta name="theme-color" content="#FAF6F3">
+<link rel="canonical" href="https://example.com/">
+
+<!-- Open Graph / Facebook / Telegram / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="اکسسوری‌های خاص و ظریف | Anita">
+<meta property="og:description" content="زیبایی در جزئیات؛ کالکشن‌های مرواریدی، مینیمال، سنگ طبیعی و اکسسوری‌های ویژه برای هر لحظه.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="static/images/og/og-accesory.webp">
+<meta property="og:image:secure_url" content="static/images/og/og-accesory.webp">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="کالکشن اکسسوری‌های ظریف، مرواریدی و طلایی">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="اکسسوری‌های خاص و ظریف | Anita">
+<meta name="twitter:description" content="کالکشن‌های خاص اکسسوری؛ از مروارید و مینیمال تا سنگ‌های طبیعی و هدیه‌های زیبا.">
+<meta name="twitter:image" content="static/images/og/og-accesory.webp">
+
+
+<!-- fave icon -->
+
+<link rel="icon" href="static/faveicon/favicon.ico" sizes="any">
+<link rel="icon" href="static/faveicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="static/faveicon/favicon-96x96.png" type="image/png" sizes="96x96">
+
+<link rel="apple-touch-icon" href="static/faveicon/apple-touch-icon.png">
+
+<link rel="manifest" href="static/faveicon/site.webmanifest">
+
+
+<!-- theme save -->
+
+<script>
+  (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+<!-- Swiper -->
+<link rel="stylesheet" href="static/swiper/swiper.min.css">
+<script src="static/swiper/swiper.min.js"></script>
+
+<!-- Alpine.js -->
+<script defer src="static/collapse.js"></script>
+<script defer src="static/alpine.js"></script>
+
+<script src="static/js/data.js"></script>
+
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/output.css">
+
+</head>
+<body x-data="shopApp()" x-init="init()" @keydown.escape.window="closeAll()">
+
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></symbol>
+  <symbol id="i-collection" viewBox="0 0 24 24"><path d="M5 5h14l3 8H2zM2 13h5l2 4h6l2-4h5v8H2z"/></symbol>
+  <symbol id="i-category" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z"/><circle cx="17.5" cy="17.5" r="3.5"/></symbol>
+  <symbol id="i-gender" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20a6 6 0 0 1 12 0M16 5.5a3 3 0 0 1 0 5.5M18 14.5a6 6 0 0 1 3 5.5"/></symbol>
+  <symbol id="i-material" viewBox="0 0 24 24"><path d="M6 4h12l3 5-9 11L3 9zM3 9h18M9 4l-2 5 5 11M15 4l2 5-5 11"/></symbol>
+  <symbol id="i-feature" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7C9.5 7 8 6 8 4.8S9.5 3 12 7zm0 0c2.5 0 4-1 4-2.200S14.5 3 12 7z"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v5H5a1 1 0 0 1-1-1zM20 14h-3v5h2a1 1 0 0 0 1-1z"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM15.5 8.500l-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-2.93 1.41-1.41m11.32-11.32 1.41-1.41M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11zM12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM17.5 6.500h.01"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 4 3 11l6 2m12-9L9 13m12-9-3 16-6-5m-3-2v6l3-3"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.700zM9 9c0 3 3 6 6 6l1-1.5-2-1-1 .5c-1-.5-1.5-1-2-2l.5-1-1-2z"/></symbol>
+</svg>
+
+<!-- 1. HEADER (sticky): menu on the right, logo center, contact on the left -->
+<header class="hdr"><div class="wrap hdr-in">
+  <button class="icon-btn" @click="menuOpen=true" aria-label="منو"><svg class="i"><use href="#i-menu"/></svg></button>
+  <div class="logo">Anita<small>JEWELRY &amp; ACCESSORIES</small></div>
+  <button class="icon-btn" @click="contactOpen=true" aria-label="تماس"><svg class="i"><use href="#i-phone"/></svg></button>
+</div></header>
+
+<main class="wrap">
+<!-- 2. HERO -->
+<section class="promo-banner mt-[var(--space-4)]">
+  <div class="promo-content">
+    <h1>زیبایی در جزئیات</h1>
+    <p class="promo-desc">اکسسوری‌هایی برای هر لحظه از زندگی</p>
+    <button class="btn" @click="scrollTop()">مشاهده محصولات</button>
+  </div>
+
+  <div class="promo-media">
+    <img src="static/images/hero_accesory.webp" alt="کالکشن اکسسوری‌های ظریف">
+  </div>
+</section>
+
+<!-- 3. FILTER BAR + SORT BAR -->
+<section id="products" class="mt-[var(--space-6)]" style="scroll-margin-top:var(--space-16)">
+  <div class="fbar" x-ref="fbar">
+    <button class="cap main" @click="openDrawer()">
+      <svg class="i"><use href="#i-filter"/></svg>فیلترها<span x-show="activeCount" x-text="'('+activeCount.toLocaleString('fa-IR')+')'"></span>
+    </button>
+    <template x-for="d in orderedDefs" :key="d.key">
+      <div class="cap" :class="{on:selected[d.key].length,open:openDD===d.key}" :style="`anchor-name:--a-${d.key}`"
+           @click.stop="toggleDD(d.key)" role="button" tabindex="0" @keydown.enter="toggleDD(d.key)">
+           <span class="x" x-show="selected[d.key].length" @click.stop="clearKey(d.key)"><svg class="i" style="width:16px;height:16px"><use href="#i-close"></use></svg></span>
+           <span x-text="capLabel(d)"></span>
+        <svg class="i chev" style="width:16px;height:16px"><use href="#i-chev"/></svg>
+      </div>
+    </template>
+  </div>
+
+  <div class="sbar">
+    <div class="cap" :class="{open:openDD==='sort'}" style="anchor-name:--a-sort" @click.stop="toggleDD('sort')" role="button" tabindex="0">
+      <span>مرتب‌سازی : <b x-text="sortOptions.find(s=>s.key===sort).label"></b></span>
+      <svg class="i chev" style="width:12px;height:12px"><use href="#i-chev"/></svg>
+    </div>
+    <span x-text="sorted.length.toLocaleString('fa-IR')+' محصول'"></span>
+  </div>
+
+  <!-- Dropdown attached to its capsule via CSS Anchor Positioning -->
+  <div class="dd" x-show="openDD" x-cloak x-transition.opacity :style="`--anchor:--a-${openDD}`" @click.outside="openDD=null">
+    <template x-if="openDD==='sort'">
+      <div><template x-for="s in sortOptions" :key="s.key"><button :class="{on:sort===s.key}" @click="sort=s.key;openDD=null;touch()"><span x-text="s.label"></span><span class="ck"><svg class="i"><use href="#i-check"/></svg></span></button></template></div>
+    </template>
+
+    <template x-if="openDD && openDD!=='sort' && openDD!=='collection'">
+      <div><template x-for="o in defOf(openDD).options" :key="o">
+        <button :class="{ on: selected[openDD] && selected[openDD].includes(o) }" @click="quickPick(openDD,o)"  :style="selected[openDD] && selected[openDD].length > 1 ? 'background:inherit;' : ''">
+          <span x-text="o"></span><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>
+        </button>
+      </template></div>
+    </template>
+
+    <template x-if="openDD && openDD==='collection'">
+      <div><template x-for="o in defOf(openDD).options" :key="o.title">
+        <button :class="{ on: selected[openDD] && selected[openDD].includes(o.title) }" @click="quickPick(openDD,o.title)"  :style="selected[openDD] && selected[openDD].length > 1 ? 'background:inherit;' : ''">
+          <span class="th"><img :src="o.image" :alt="o.title" onerror="this.style.display='none'"></span>
+          <span x-text="o.title"></span><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>
+        </button>
+      </template></div>
+    </template>
+  </div>
+
+  <!-- 4. GRID -->
+  <div class="grid-p grid grid-cols-1 min-[350px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[var(--gap-lg)] mt-[var(--space-5)]" :class="{busy:loading}">
+    <template x-for="p in pageItems" :key="p.id">
+      <button class="pcard" @click="openModal(p)">
+        <div class="pimg"><img :src="p.images[0]" :alt="p.title" loading="lazy" onerror="this.style.display='none'"></div>
+        <span class="ptitle" x-text="p.title"></span>
+        <span class="pprice" x-text="fmt(p.price)"></span>
+      </button>
+    </template>
+  </div>
+  <div class="empty" x-show="!sorted.length" x-cloak>محصولی با این فیلترها پیدا نشد.</div>
+
+  <!-- 5. PAGINATION -->
+  <div class="pg" x-show="totalPages>1" x-cloak>
+    <button :disabled="page===1" @click="go(page-1)"><svg class="i" style="width:14px;height:14px"><use href="#i-right"/></svg></button>
+    <template x-for="n in totalPages" :key="n"><button :class="{on:n===page}" @click="go(n)" x-text="n.toLocaleString('fa-IR')"></button></template>
+    <button :disabled="page===totalPages" @click="go(page+1)"><svg class="i" style="width:14px;height:14px"><use href="#i-left"/></svg></button>
+  </div>
+</section>
+
+<!-- 6. CUSTOM ORDER -->
+<section class="sec">
+  <div class="promo-banner promo-banner--flip">
+    <div class="promo-content">
+      <h2>زیورآلاتی که برای تو ساخته می‌شوند</h2>
+      <p class="promo-desc">دستبند و گردنبند اختصاصی با سلیقه و سبک مورد علاقه‌ات.</p>
+      <button class="btn" @click="contactOpen = true">
+        سفارش طرح اختصاصی
+        <svg class="i"><use href="#i-send"/></svg>
+      </button>
+    </div>
+
+    <div class="promo-media">
+      <img src="static/images/custom_jewelry.webp" alt="زیورآلات سفارشی">
+    </div>
+  </div>
+</section>
+
+<!-- 7. COLLECTIONS (Swiper) -->
+<section class="sec">
+  <h2 class="sec-title">کالکشن‌های منتخب</h2>
+  <div class="swiper coll-swiper"><div class="swiper-wrapper">
+    <template x-for="c in collections" :key="c.title">
+      <div class="swiper-slide">
+        <button class="coll" @click="pickCollection(c.title)"
+                :style="{ backgroundImage: 'url(' + c.image + ')' }">
+          <span class="coll-title" x-text="c.title"></span>
+        </button>
+      </div>
+    </template>
+  </div></div>
+</section>
+
+<!-- 8. WHY -->
+<section class="sec">
+  <h2 class="sec-title">چرا لونیا؟</h2>
+  <div class="why">
+    <div><span class="ic-c"><svg class="i"><use href="#i-shield"/></svg></span><b>پشتیبانی سریع</b>پاسخ‌گویی در کمترین زمان</div>
+    <div><span class="ic-c"><svg class="i"><use href="#i-headset"/></svg></span><b>راهنمای انتخاب</b>مشاوره انتخاب اکسسوری</div>
+    <div><span class="ic-c"><svg class="i"><use href="#i-gift"/></svg></span><b>بسته‌بندی هدیه</b>بسته‌بندی شیک و لوکس</div>
+    <div><span class="ic-c"><svg class="i"><use href="#i-material"/></svg></span><b>سفارش‌سازی اختصاصی</b>ساخت طرح دلخواه</div>
+  </div>
+</section>
+
+<!-- 9. GIFT PACKAGING -->
+<section class="sec">
+  <div class="promo-banner">
+    <div class="promo-content">
+      <h2>هدیه‌ای خاص برای لحظه‌های خاص</h2>
+      <p class="promo-desc">بسته‌بندی شیک و لوکس برای هدیه دادن.</p>
+      <button class="btn" @click="giftCta()">
+        مشاهده محصولات مناسب هدیه
+        <svg class="i"><use href="#i-gift"/></svg>
+      </button>
+    </div>
+
+    <div class="promo-media">
+      <img src="static/images/gift_box.webp" alt="بسته‌بندی هدیه">
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 11. FOOTER -->
+<footer><div class="wrap">
+  <div class="foot">
+    <div class="logo">Anita<small>JEWELRY &amp; ACCESSORIES</small></div>
+    <nav><a href="#products" @click.prevent="scrollTop()">محصولات</a><a href="#" @click.prevent="contactOpen=true">تماس با ما</a></nav>
+    <div class="socials">
+      <a href="#" aria-label="اینستاگرام"><svg class="i"><use href="#i-instagram"/></svg></a>
+      <a href="#" aria-label="تلگرام"><svg class="i"><use href="#i-telegram"/></svg></a>
+      <a href="#" aria-label="واتساپ"><svg class="i"><use href="#i-whatsapp"/></svg></a>
+    </div>
+  </div>
+  <div class="copy"><p>© 2024 Anita. All rights reserved.</p><p>Design &amp; Developed By MohammadTaha</p></div>
+</div></footer>
+
+<!-- OVERLAY + HAMBURGER MENU -->
+<div class="ov" :class="{show:menuOpen||drawerOpen}" @click="menuOpen=false;drawerOpen=false"></div>
+<aside class="drawer" :class="{show:menuOpen}">
+  <div class="dhead"><span>منو</span><button class="mclose" @click="menuOpen=false"><svg class="i"><use href="#i-close"/></svg></button></div>
+  <nav class="dbody menu">
+    <template x-for="l in links" :key="l.label"><a href="#" :class="{on:menuActive===l.label}" @click.prevent="menuClick(l)"><svg class="i"><use :href="'#'+l.icon"/></svg><span x-text="l.label"></span></a></template>
+  </nav>
+  <div class="panel-foot">
+    <button type="button" class="btn btn-primary btn-block" @click="toggleTheme()" style="align-self: stretch;">
+        <svg class="i"><use :href="theme === 'dark' ? '#i-sun' : '#i-moon'"/></svg>
+        <span x-text="theme === 'dark' ? 'حالت روشن' : 'حالت تیره'"></span>
+    </button>
+  </div>
+</aside>
+
+<!-- ALL FILTERS DRAWER -->
+<aside class="drawer drawer-lg" :class="{show:drawerOpen}">
+  <div class="dhead">
+    <span class="dtitle"><svg class="i"><use href="#i-filter"/></svg>همه فیلترها<span class="cnt" x-show="draftTotal" x-text="draftTotal.toLocaleString('fa-IR')"></span></span>
+    <button class="mclose" @click="drawerOpen=false"><svg class="i"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="dbody">
+    <div class="sel-strip" x-show="draftTotal" x-cloak>
+      <template x-for="d in defs" :key="d.key"><template x-for="o in draft[d.key]" :key="d.key+o"><button class="pill" @click="toggleDraft(d.key,o)"><span x-text="o"></span><svg class="i" style="width:12px;height:12px"><use href="#i-close"/></svg></button></template></template>
+    </div>
+    <template x-for="d in defs" :key="d.key">
+      <div class="acc" :class="{open:openAcc===d.key}">
+        <button @click="openAcc=openAcc===d.key?null:d.key">
+          <span class="ic-c"><svg class="i"><use :href="'#i-'+d.key"/></svg></span>
+          <span class="tt"><span x-text="d.label"></span><span class="sub" x-text="draft[d.key].length?draft[d.key].join('، '):'همه'"></span></span>
+          <span class="cnt" x-show="draft[d.key].length" x-text="draft[d.key].length.toLocaleString('fa-IR')"></span>
+          <svg class="i chev"><use href="#i-chev"/></svg>
+        </button>
+
+        <div x-show="openAcc===d.key" x-collapse.duration.250ms>
+
+          <template x-if="d.key==='collection'">
+            <div class="opt-list">
+              <template x-for="o in d.options" :key="o.title">
+                <button class="opt" :class="{on:draft[d.key].includes(o.title)}" @click="toggleDraft(d.key,o.title)">
+                  <span class="th"><img :src="o.image" :alt="o.title" onerror="this.style.display='none'"></span><span x-text="o.title"></span>
+                  <span class="ck"><svg class="i"><use href="#i-check"/></svg></span>
+                </button>
+              </template>
+            </div>
+          </template>
+
+          <template x-if="d.key!=='collection'">
+            <div class="opts">
+              <template x-for="o in d.options" :key="o">
+                <button class="chip" :class="{on:draft[d.key].includes(o)}" @click="toggleDraft(d.key,o)"><svg class="i" x-show="draft[d.key].includes(o)"><use href="#i-check"/></svg><span x-text="o"></span></button>
+              </template>
+            </div>
+          </template>
+
+        </div>
+      </div>
+    </template>
+  </div>
+  <div class="dfoot">
+    <button class="btn btn-ghost" @click="clearDraft()">پاک کردن</button>
+    <button class="btn" @click="applyDraft()" x-text="'نمایش '+draftResults.toLocaleString('fa-IR')+' محصول'"></button>
+  </div>
+</aside>
+
+<!-- PRODUCT MODAL (single, dynamic) -->
+<div class="mback" x-show="modalProduct" x-cloak x-transition.opacity @click.self="closeModal()">
+  <template x-if="modalProduct">
+  <div class="modal t-enter">
+    <div class="mhead"><span x-text="modalProduct.title"></span><button class="mclose" @click="closeModal()"><svg class="i"><use href="#i-close"/></svg></button></div>
+    <div class="mbody">
+      <div>
+        <div class="gal" @touchstart.passive="tx=$event.touches[0].clientX" @touchend.passive="swipe($event.changedTouches[0].clientX)">
+          <img :src="modalProduct.images[idx]" :alt="modalProduct.title" onerror="this.style.display='none'">
+          <template x-if="modalProduct.images.length>1"><div>
+            <button class="nav" style="inset-inline-end:var(--space-3)" @click="step(1)" aria-label="بعدی"><svg class="i"><use href="#i-left"/></svg></button>
+            <button class="nav" style="inset-inline-start:var(--space-3)" @click="step(-1)" aria-label="قبلی"><svg class="i"><use href="#i-right"/></svg></button>
+          </div></template>
+          <span class="count" x-text="(idx+1).toLocaleString('fa-IR')+' / '+modalProduct.images.length.toLocaleString('fa-IR')"></span>
+        </div>
+        <div class="thumbs"><template x-for="(im,i) in modalProduct.images" :key="i"><button :class="{on:i===idx}" @click="idx=i"><img :src="im" alt="" onerror="this.style.display='none'"></button></template></div>
+      </div>
+      <div>
+        <h2 class="m-0 text-[length:var(--font-size-xl)]" x-text="modalProduct.title"></h2>
+        <p class="my-[var(--space-3)]"><span class="price" x-text="fmt(modalProduct.price)"></span></p>
+        <p class="text-[var(--text-secondary)] m-0" x-show="modalProduct.desc" x-text="modalProduct.desc"></p>
+        <div class="meta">
+          <div><small>دسته‌بندی</small><b x-text="modalProduct.category"></b></div>
+          <div><small>کالکشن</small><b x-text="modalProduct.collection"></b></div>
+          <div><small>جنس</small><b x-text="modalProduct.material"></b></div>
+          <div><small>جنسیت</small><b x-text="modalProduct.gender"></b></div>
+        </div>
+        <template x-for="f in modalProduct.features" :key="f"><span class="tag"><svg class="i"><use href="#i-check"/></svg><span x-text="f"></span></span></template>
+      </div>
+    </div>
+    <div class="mfoot">
+      <a class="btn" :href="orderLink" target="_blank" rel="noopener">ثبت سفارش<svg class="i"><use href="#i-send"/></svg></a>
+    </div>
+  </div></template>
+</div>
+
+<!-- CONTACT MODAL -->
+<div class="mback" x-show="contactOpen" x-cloak x-transition.opacity @click.self="contactOpen=false">
+  <div class="modal t-enter" style="width:min(100%,440px)">
+    <div class="mhead"><span>تماس با ما</span><button class="mclose" @click="contactOpen=false"><svg class="i"><use href="#i-close"/></svg></button></div>
+    <div class="dbody" style="padding:var(--space-5)">
+      <p class="m-0 text-[var(--text-secondary)]">برای سفارش، مشاوره انتخاب یا طرح اختصاصی با ما در ارتباط باشید.</p>
+      <a class="crow" :href="'tel:'+contact.phone"><span class="ic-c"><svg class="i"><use href="#i-phone"/></svg></span><span><small class="block text-[var(--text-muted)]">تلفن</small><b x-text="contact.phone"></b></span></a>
+      <a class="crow" :href="'mailto:'+contact.email"><span class="ic-c"><svg class="i"><use href="#i-mail"/></svg></span><span><small class="block text-[var(--text-muted)]">ایمیل</small><b x-text="contact.email"></b></span></a>
+      <div class="crow"><span class="ic-c"><svg class="i"><use href="#i-pin"/></svg></span><span><small class="block text-[var(--text-muted)]">نشانی</small><b x-text="contact.address"></b></span></div>
+      <div class="socials">
+        <a :href="'https://instagram.com/' + contact.instagram" aria-label="اینستاگرام"><svg class="i"><use href="#i-instagram"/></svg></a>
+        <a :href="'https://t.me/' + contact.telegram" aria-label="تلگرام"><svg class="i"><use href="#i-telegram"/></svg></a>
+        <a :href="'https://wa.me/' + contact.whatsapp" aria-label="واتساپ"><svg class="i"><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function shopApp() {
+  return {
+    theme: document.documentElement.getAttribute('data-theme') || 'light',
+    menuOpen: false, drawerOpen: false, contactOpen: false, openDD: null, openAcc: null,
+    sort: 'newest', page: 1, perPage: 6, loading: false, modalProduct: null, idx: 0, tx: 0,
+    menuActive: 'خانه', collections,
+    contact: { phone: '۰۹۱۲ ۱۲۳ ۴۵۶۷', email: 'info@Anitaea.ir', address: 'تهران، ایران' , whatsapp: '989120000000',
+      telegram: 'Mhsn_8482', instagram: 'Flora_shop'},
+    links: [
+      { label: 'خانه', icon: 'i-home', action: 'top' },
+      { label: 'محصولات', icon: 'i-category', action: 'products' },
+      { label: 'تماس با ما', icon: 'i-phone', action: 'contact' }
+    ],
+    sortOptions: [{ key: 'newest', label: 'جدیدترین' }, { key: 'oldest', label: 'قدیمی‌ترین' }, { key: 'cheap', label: 'ارزان‌ترین' }, { key: 'expensive', label: 'گران‌ترین' }],
+    defs: [
+      { key: 'collection', label: 'کالکشن', options: collections, field: 'collection' },
+      { key: 'category', label: 'دسته‌بندی', options: categories, field: 'category' },
+      { key: 'material', label: 'جنس', options: materials, field: 'material' },
+      { key: 'feature', label: 'ویژگی', options: features, field: 'features' },
+      { key: 'gender', label: 'جنسیت', options: genders, field: 'gender' },
+    ],
+    selected: { collection: [], category: [], gender: [], material: [], feature: [] },
+    draft: { collection: [], category: [], gender: [], material: [], feature: [] },
+    quickOrder: [],
+
+    init() {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark'
+      this.$watch('contactOpen', v => document.body.style.overflow = (v || this.modalProduct) ? 'hidden' : '')
+      new Swiper('.coll-swiper', { slidesPerView: 1.4, spaceBetween: 16, breakpoints: { 640: { slidesPerView: 2.5 }, 1024: { slidesPerView: 3 } } })
+    },
+    fmt(n) { return n.toLocaleString('fa-IR') + ' تومان' },
+    thumb(c) { const p = products.find(x => x.collection === c); return p ? p.images[0] : '' },
+    defOf(k) { return this.defs.find(d => d.key === k) },
+    get activeCount() { return Object.values(this.selected).reduce((a, v) => a + v.length, 0) },
+    get draftTotal() { return Object.values(this.draft).reduce((a, v) => a + v.length, 0) },
+    get orderedDefs() {
+      const act = this.defs.filter(d => this.selected[d.key].length).sort((a, b) => this.quickOrder.indexOf(a.key) - this.quickOrder.indexOf(b.key))
+      return [...act, ...this.defs.filter(d => !this.selected[d.key].length)]
+    },
+    capLabel(d) {
+      const s = this.selected[d.key]
+      return s.length === 0 ? d.label : s.length === 1 ? d.label + ' : ' + s[0] : d.label + ' : ' + s.length.toLocaleString('fa-IR') + ' مورد'
+    },
+    // ---- Filtering -> Sorting -> Pagination
+    matches(sel) {
+      return products.filter(p => this.defs.every(d => {
+        const s = sel[d.key]; if (!s.length) return true
+        const v = p[d.field]
+        return Array.isArray(v) ? s.some(x => v.includes(x)) : s.includes(v)
+      }))
+    },
+    get filtered() { return this.matches(this.selected) },
+    get draftResults() { return this.matches(this.draft).length },
+    get sorted() {
+      const f = { newest: (a, b) => b.id - a.id, oldest: (a, b) => a.id - b.id, cheap: (a, b) => a.price - b.price, expensive: (a, b) => b.price - a.price }[this.sort]
+      return [...this.filtered].sort(f)
+    },
+    get totalPages() { return Math.max(1, Math.ceil(this.sorted.length / this.perPage)) },
+    get pageItems() { return this.sorted.slice((this.page - 1) * this.perPage, this.page * this.perPage) },
+    touch() { this.page = 1; this.loading = true; setTimeout(() => this.loading = false, 180) },
+    go(n) { this.loading = true; setTimeout(() => { this.page = n; this.loading = false; this.scrollTop() }, 150) },
+    scrollTop() { document.getElementById('products').scrollIntoView({ behavior: 'smooth' }) },
+    // ---- Quick filters (single select)
+    toggleDD(k) { this.openDD = this.openDD === k ? null : k },
+    bump(k) { this.quickOrder = [k, ...this.quickOrder.filter(x => x !== k)] },
+    quickPick(k, v) { this.selected[k] = [v]; this.openDD = null; this.bump(k); this.touch(); this.revealRow() },
+    clearKey(k) { this.selected[k] = []; this.quickOrder = this.quickOrder.filter(x => x !== k); this.openDD = null; this.touch() },
+    revealRow() { this.$nextTick(() => this.$refs.fbar.scrollTo({ left: 0, behavior: 'smooth' }) , this.$refs.fbar ) },
+    // ---- All filters (multi select; shared state updated on Apply)
+    openDrawer() { this.draft = JSON.parse(JSON.stringify(this.selected)); this.openAcc = this.openAcc || 'collection'; this.drawerOpen = true },
+    toggleDraft(k, v) { const a = this.draft[k]; this.draft[k] = a.includes(v) ? a.filter(x => x !== v) : [...a, v] },
+    clearDraft() { Object.keys(this.draft).forEach(k => this.draft[k] = []) },
+    applyDraft() {
+      this.selected = JSON.parse(JSON.stringify(this.draft))
+      this.quickOrder = Object.keys(this.selected).filter(k => this.selected[k].length)
+      this.drawerOpen = false; this.touch(); this.revealRow(); this.scrollTop()
+    },
+    pickCollection(c) { this.selected.collection = [c]; this.bump('collection'); this.touch(); this.revealRow(); this.scrollTop() },
+    giftCta() { this.selected.feature = ['مناسب هدیه']; this.bump('feature'); this.touch(); this.revealRow(); this.scrollTop() },
+    menuClick(l) {
+      this.menuActive = l.label; this.menuOpen = false
+      if (l.action === 'top') window.scrollTo({ top: 0, behavior: 'smooth' })
+      else if (l.action === 'products') this.scrollTop()
+      else this.contactOpen = true
+    },
+    // ---- Modal
+    openModal(p) { this.modalProduct = p; this.idx = 0; document.body.style.overflow = 'hidden' },
+    closeModal() { this.modalProduct = null; if (!this.contactOpen) document.body.style.overflow = '' },
+    step(d) { const n = this.modalProduct.images.length; this.idx = (this.idx + d + n) % n },
+    swipe(x) { const dx = x - this.tx; if (Math.abs(dx) > 40) this.step(dx > 0 ? 1 : -1) },
+    orderNow() { this.closeModal(); this.contactOpen = true; document.body.style.overflow = 'hidden' },
+    closeAll() { this.closeModal(); this.contactOpen = false; document.body.style.overflow = ''; this.menuOpen = false; this.drawerOpen = false; this.openDD = null },
+    toggleTheme() {
+        this.theme = this.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', this.theme);
+        try { localStorage.setItem('theme', this.theme); } catch (e) {}
+    },
+
+    get orderLink() {
+    const p = this.modalProduct;
+    if (!p) return '#';
+    const lines = ['سلام وقت بخیر', `از محصول «${p.title}» خوشم اومده.`, `توضیحات: ${p.desc}`, 'لطفاً برای ثبت سفارش راهنمایی کنید.'];
+    return `https://t.me/${this.contact.telegram}?text=${encodeURIComponent(lines.join('\n'))}`;
+    },
+
+
+  }
+}
+</script>
+</body>
+</html>
